@@ -5,7 +5,7 @@ var searchData=
   ['change_5fto_5fmaple',['change_to_maple',['../class_entropy_model.html#a1691e034c1c2583116723ec0655643a6',1,'EntropyModel']]],
   ['change_5fto_5fmatlab',['change_to_matlab',['../class_entropy_model.html#a3f52ce7743c4d56112f1ffe9f414e84e',1,'EntropyModel']]],
   ['change_5fto_5fscilab',['change_to_scilab',['../class_entropy_model.html#a209a3c66b9ad2e9e29d0346149b62a14',1,'EntropyModel']]],
-  ['channel',['Channel',['../class_channel.html#a8acab76798958b57f8dbfec9255300ba',1,'Channel']]],
+  ['channel',['Channel',['../class_channel.html#a1f2be6e573ea68567bd5183ab8ee86ab',1,'Channel::Channel(std::string &amp;new_channel_elements)'],['../class_channel.html#aa1feeec8b9834e76776cb49815deaddd',1,'Channel::Channel(mat new_channel_elements)']]],
   ['clone',['clone',['../class_channel.html#a5bbc85ba9c208072ad1e5c83dc4b266a',1,'Channel::clone()'],['../class_gain.html#a5297c666b691f523927746581ff2d6ff',1,'Gain::clone()']]],
   ['compare_5fover_5fgain',['compare_over_gain',['../class_g_leakage.html#abe766103577c69ed3fb5daf37cb9ed11',1,'GLeakage']]],
   ['compare_5fover_5fprior',['compare_over_prior',['../class_g_leakage.html#a9b98c72c14bddb25a2fce7ae18265676',1,'GLeakage']]],
