@@ -1,0 +1,8 @@
+libglpk_la-compress.lo: zlib/compress.c zlib/zlib.h zlib/zconf.h \
+ zlib/zsymb.h
+
+zlib/zlib.h:
+
+zlib/zconf.h:
+
+zlib/zsymb.h:

@@ -1,0 +1,9 @@
+glpsol.o: glpsol.c ../src/glpk.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stdarg.h \
+ /usr/lib/gcc/i686-linux-gnu/4.7/include/stddef.h
+
+../src/glpk.h:
+
+/usr/lib/gcc/i686-linux-gnu/4.7/include/stdarg.h:
+
+/usr/lib/gcc/i686-linux-gnu/4.7/include/stddef.h:
