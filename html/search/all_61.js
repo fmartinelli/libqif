@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['additive_5fleakage',['additive_leakage',['../class_g_leakage.html#a60629f9f3862a921a2fe73e915223481',1,'GLeakage']]],
-  ['adjacency',['adjacency',['../class_graph.html#af5d2f3a1391c306cce3c5421a6f2893f',1,'Graph']]],
-  ['arma_5fexample_2ecpp',['arma_example.cpp',['../arma__example_8cpp.html',1,'']]],
-  ['at',['at',['../class_channel.html#aeae3709d40839c15a012c6f9b5bd5993',1,'Channel::at()'],['../class_gain.html#a59c541155ec6781675f66798d87f4f80',1,'Gain::at()'],['../class_prob.html#a6d258b6f4667d22757645c952f06bfa6',1,'Prob::at()']]]
+  ['additive_5fleakage',['additive_leakage',['../class_g_leakage.html#a21c0eb30b6ef16a97bd3caa6eccf8fa2',1,'GLeakage']]],
+  ['adjacency',['adjacency',['../class_graph.html#a44db43029171c38b7dfd0d99b9d6d23b',1,'Graph']]],
+  ['anotherlibqifexample_2ecpp',['AnotherLIBQIFExample.cpp',['../_another_l_i_b_q_i_f_example_8cpp.html',1,'']]],
+  ['at',['at',['../class_channel.html#ac817a004cec4a438b8c3c9513683d6e6',1,'Channel::at()'],['../class_gain.html#a2eb0cbee5b3aca8c6738933de18be361',1,'Gain::at()'],['../class_prob.html#a7de3668a9613d8527c1aa08d8fc9af5f',1,'Prob::at()']]]
 ];

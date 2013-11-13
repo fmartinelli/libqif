@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -85,6 +85,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_channel-members.html">List of all members</a>  </div>
@@ -109,17 +110,14 @@ Inheritance diagram for Channel:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1f2be6e573ea68567bd5183ab8ee86ab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#a1f2be6e573ea68567bd5183ab8ee86ab">Channel</a> (std::string &amp;new_channel_elements)</td></tr>
-<tr class="memdesc:a1f2be6e573ea68567bd5183ab8ee86ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">A normal constructor member taking 1 argument.  <a href="#a1f2be6e573ea68567bd5183ab8ee86ab">More...</a><br/></td></tr>
-<tr class="separator:a1f2be6e573ea68567bd5183ab8ee86ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1feeec8b9834e76776cb49815deaddd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#aa1feeec8b9834e76776cb49815deaddd">Channel</a> (mat new_channel_elements)</td></tr>
-<tr class="separator:aa1feeec8b9834e76776cb49815deaddd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f15ebd302464069f1a9e3f0ded14482"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#a5f15ebd302464069f1a9e3f0ded14482">~Channel</a> ()</td></tr>
-<tr class="memdesc:a5f15ebd302464069f1a9e3f0ded14482"><td class="mdescLeft">&#160;</td><td class="mdescRight">A normal destroyer member.  <a href="#a5f15ebd302464069f1a9e3f0ded14482">More...</a><br/></td></tr>
-<tr class="separator:a5f15ebd302464069f1a9e3f0ded14482"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf85bcd04d0ef36a027d9f4eb6e54853"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_channel.html">Channel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#acf85bcd04d0ef36a027d9f4eb6e54853">new_id_channel</a> (int size)</td></tr>
-<tr class="memdesc:acf85bcd04d0ef36a027d9f4eb6e54853"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a new identity channel with the size specified in the argument.  <a href="#acf85bcd04d0ef36a027d9f4eb6e54853">More...</a><br/></td></tr>
-<tr class="separator:acf85bcd04d0ef36a027d9f4eb6e54853"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaf6b2e79c9c5e10b40ff1aa997695b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#aaaf6b2e79c9c5e10b40ff1aa997695b8">Channel</a> (<a class="el" href="types_8h.html#ae96f7e0a0a27a61d630bd0e90e5fb7be">StringType</a> &amp;new_channel_elements)</td></tr>
+<tr class="memdesc:aaaf6b2e79c9c5e10b40ff1aa997695b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">A normal constructor member taking 1 argument.  <a href="#aaaf6b2e79c9c5e10b40ff1aa997695b8">More...</a><br/></td></tr>
+<tr class="separator:aaaf6b2e79c9c5e10b40ff1aa997695b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35421f64f6563f32553ac9da107b3f7e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#a35421f64f6563f32553ac9da107b3f7e">Channel</a> (<a class="el" href="types_8h.html#a14a138a4dd5ea1205f8f06edfa2c3dc5">MatrixType</a> &amp;new_channel_elements)</td></tr>
+<tr class="separator:a35421f64f6563f32553ac9da107b3f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1b2dcdadaaf756b1614a7f357a19669"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_channel.html">Channel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#af1b2dcdadaaf756b1614a7f357a19669">new_id_channel</a> (<a class="el" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a> size)</td></tr>
+<tr class="memdesc:af1b2dcdadaaf756b1614a7f357a19669"><td class="mdescLeft">&#160;</td><td class="mdescRight">A normal destroyer member.  <a href="#af1b2dcdadaaf756b1614a7f357a19669">More...</a><br/></td></tr>
+<tr class="separator:af1b2dcdadaaf756b1614a7f357a19669"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bbc85ba9c208072ad1e5c83dc4b266a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_channel.html">Channel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#a5bbc85ba9c208072ad1e5c83dc4b266a">clone</a> ()</td></tr>
 <tr class="memdesc:a5bbc85ba9c208072ad1e5c83dc4b266a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create another new channel with the same content.  <a href="#a5bbc85ba9c208072ad1e5c83dc4b266a">More...</a><br/></td></tr>
 <tr class="separator:a5bbc85ba9c208072ad1e5c83dc4b266a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -130,28 +128,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac56a9a5072dfaad157203eec5af1edef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides the number of channel columns.  <a href="#ac56a9a5072dfaad157203eec5af1edef">More...</a><br/></td></tr>
 <tr class="separator:ac56a9a5072dfaad157203eec5af1edef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b656fcb31a522141b0a9c3e1d4f0fac"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#a3b656fcb31a522141b0a9c3e1d4f0fac">is_symmetric</a> ()</td></tr>
-<tr class="memdesc:a3b656fcb31a522141b0a9c3e1d4f0fac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the channel is simmetric.  <a href="#a3b656fcb31a522141b0a9c3e1d4f0fac">More...</a><br/></td></tr>
+<tr class="memdesc:a3b656fcb31a522141b0a9c3e1d4f0fac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the channel is simmetrimatrix.  <a href="#a3b656fcb31a522141b0a9c3e1d4f0fac">More...</a><br/></td></tr>
 <tr class="separator:a3b656fcb31a522141b0a9c3e1d4f0fac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac69394d99a60663221a64c47b554c366"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#ac69394d99a60663221a64c47b554c366">is_partial_symmetric</a> ()</td></tr>
-<tr class="memdesc:ac69394d99a60663221a64c47b554c366"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the channel is partial simmetric.  <a href="#ac69394d99a60663221a64c47b554c366">More...</a><br/></td></tr>
-<tr class="separator:ac69394d99a60663221a64c47b554c366"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d7a0a813a3fa559853a4b291fd52ee2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#a0d7a0a813a3fa559853a4b291fd52ee2">is_equal_to</a> (const <a class="el" href="class_channel.html">Channel</a> &amp;other)</td></tr>
-<tr class="memdesc:a0d7a0a813a3fa559853a4b291fd52ee2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the argument is equal to the current channel.  <a href="#a0d7a0a813a3fa559853a4b291fd52ee2">More...</a><br/></td></tr>
-<tr class="separator:a0d7a0a813a3fa559853a4b291fd52ee2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ff5ec69167a49a5b6deb48ee9277262"><td class="memItemLeft" align="right" valign="top">vec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#a3ff5ec69167a49a5b6deb48ee9277262">get_row</a> (int index)</td></tr>
-<tr class="memdesc:a3ff5ec69167a49a5b6deb48ee9277262"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the row at the position the index argument.  <a href="#a3ff5ec69167a49a5b6deb48ee9277262">More...</a><br/></td></tr>
-<tr class="separator:a3ff5ec69167a49a5b6deb48ee9277262"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f3548c7b19e56277e1d4e1ef45896fc"><td class="memItemLeft" align="right" valign="top">vec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#a0f3548c7b19e56277e1d4e1ef45896fc">get_column</a> (int index)</td></tr>
-<tr class="memdesc:a0f3548c7b19e56277e1d4e1ef45896fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the column at the position the index argument.  <a href="#a0f3548c7b19e56277e1d4e1ef45896fc">More...</a><br/></td></tr>
-<tr class="separator:a0f3548c7b19e56277e1d4e1ef45896fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7d0593c017c2cd059b5dbbac4fc9ed9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#af7d0593c017c2cd059b5dbbac4fc9ed9">set_row</a> (int index, vec new_row_elements)</td></tr>
-<tr class="memdesc:af7d0593c017c2cd059b5dbbac4fc9ed9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the column at the position of the index argument.  <a href="#af7d0593c017c2cd059b5dbbac4fc9ed9">More...</a><br/></td></tr>
-<tr class="separator:af7d0593c017c2cd059b5dbbac4fc9ed9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad984ccd61e1f152b607046fe4a22cf0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#aad984ccd61e1f152b607046fe4a22cf0">set_row</a> (int index, char *new_row_elements)</td></tr>
-<tr class="memdesc:aad984ccd61e1f152b607046fe4a22cf0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the column at the position of the index argument.  <a href="#aad984ccd61e1f152b607046fe4a22cf0">More...</a><br/></td></tr>
-<tr class="separator:aad984ccd61e1f152b607046fe4a22cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeae3709d40839c15a012c6f9b5bd5993"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#aeae3709d40839c15a012c6f9b5bd5993">at</a> (int index_x, int index_y)</td></tr>
-<tr class="separator:aeae3709d40839c15a012c6f9b5bd5993"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cd4b22c54c090d6c3719e7dda5ca621"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a83246e2fc2d720439cfebe9d273bb053">VectorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#a1cd4b22c54c090d6c3719e7dda5ca621">get_row</a> (<a class="el" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a> index)</td></tr>
+<tr class="memdesc:a1cd4b22c54c090d6c3719e7dda5ca621"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the channel is partial simmetrimatrix.  <a href="#a1cd4b22c54c090d6c3719e7dda5ca621">More...</a><br/></td></tr>
+<tr class="separator:a1cd4b22c54c090d6c3719e7dda5ca621"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0af509e5d58004de92b0865ec77f18e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a83246e2fc2d720439cfebe9d273bb053">VectorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#a0af509e5d58004de92b0865ec77f18e7">get_column</a> (<a class="el" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a> index)</td></tr>
+<tr class="memdesc:a0af509e5d58004de92b0865ec77f18e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the column at the position the index argument.  <a href="#a0af509e5d58004de92b0865ec77f18e7">More...</a><br/></td></tr>
+<tr class="separator:a0af509e5d58004de92b0865ec77f18e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac817a004cec4a438b8c3c9513683d6e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a5f642903648a5cbec7a6d8326bc2eed6">DoubleType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#ac817a004cec4a438b8c3c9513683d6e6">at</a> (<a class="el" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a> index_x, <a class="el" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a> index_y)</td></tr>
+<tr class="memdesc:ac817a004cec4a438b8c3c9513683d6e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the column at the position of the index argument.  <a href="#ac817a004cec4a438b8c3c9513683d6e6">More...</a><br/></td></tr>
+<tr class="separator:ac817a004cec4a438b8c3c9513683d6e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a15f642dc97fa0b92828eeaececd07a6c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ae96f7e0a0a27a61d630bd0e90e5fb7be">StringType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#a15f642dc97fa0b92828eeaececd07a6c">str</a></td></tr>
+<tr class="separator:a15f642dc97fa0b92828eeaececd07a6c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
@@ -161,21 +153,21 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a26aefeaf9124db82e3c754830c8df8ec"><td class="memItemLeft" align="right" valign="top">mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#a26aefeaf9124db82e3c754830c8df8ec">C</a></td></tr>
-<tr class="separator:a26aefeaf9124db82e3c754830c8df8ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d99c5e0ef0927a5c3bce0cd3b933b10"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a14a138a4dd5ea1205f8f06edfa2c3dc5">MatrixType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#a2d99c5e0ef0927a5c3bce0cd3b933b10">matrix</a></td></tr>
+<tr class="separator:a2d99c5e0ef0927a5c3bce0cd3b933b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A channel matrix class. </p>
 <p>A channel must satisfy that the sum each row is 1 and each element is greater than or equal to 0. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a1f2be6e573ea68567bd5183ab8ee86ab"></a>
+<a class="anchor" id="aaaf6b2e79c9c5e10b40ff1aa997695b8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">Channel::Channel </td>
           <td>(</td>
-          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ae96f7e0a0a27a61d630bd0e90e5fb7be">StringType</a> &amp;&#160;</td>
           <td class="paramname"><em>new_channel_elements</em></td><td>)</td>
           <td></td>
         </tr>
@@ -194,18 +186,18 @@ Protected Attributes</h2></td></tr>
 Correct elements: each element of new_channel_elements must be a number between 0 and 1. </dd>
 <dd>
 Probability distribution channel: the sum each outputs_number elements must be 1. </dd></dl>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="class_channel.html#a5f15ebd302464069f1a9e3f0ded14482" title="A normal destroyer member.">~Channel()</a> <a class="el" href="class_channel.html#acf85bcd04d0ef36a027d9f4eb6e54853" title="Generates a new identity channel with the size specified in the argument.">new_id_channel</a> (int size) </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd>~Channel() <a class="el" href="class_channel.html#af1b2dcdadaaf756b1614a7f357a19669" title="A normal destroyer member.">new_id_channel</a> (int size) </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="aa1feeec8b9834e76776cb49815deaddd"></a>
+<a class="anchor" id="a35421f64f6563f32553ac9da107b3f7e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">Channel::Channel </td>
           <td>(</td>
-          <td class="paramtype">mat&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a14a138a4dd5ea1205f8f06edfa2c3dc5">MatrixType</a> &amp;&#160;</td>
           <td class="paramname"><em>new_channel_elements</em></td><td>)</td>
           <td></td>
         </tr>
@@ -214,39 +206,21 @@ Probability distribution channel: the sum each outputs_number elements must be 1
 
 </div>
 </div>
-<a class="anchor" id="a5f15ebd302464069f1a9e3f0ded14482"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Channel::~Channel </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>A normal destroyer member. </p>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="class_channel.html#a1f2be6e573ea68567bd5183ab8ee86ab" title="A normal constructor member taking 1 argument.">Channel()</a> </dd></dl>
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aeae3709d40839c15a012c6f9b5bd5993"></a>
+<a class="anchor" id="ac817a004cec4a438b8c3c9513683d6e6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double Channel::at </td>
+          <td class="memname"><a class="el" href="types_8h.html#a5f642903648a5cbec7a6d8326bc2eed6">DoubleType</a> Channel::at </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a>&#160;</td>
           <td class="paramname"><em>index_x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a>&#160;</td>
           <td class="paramname"><em>index_y</em>&#160;</td>
         </tr>
         <tr>
@@ -256,6 +230,26 @@ Probability distribution channel: the sum each outputs_number elements must be 1
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Changes the column at the position of the index argument. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>is an integer argument which corresponds to the row position on the channel. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition</dt><dd>The index argument must be between 0 and <a class="el" href="class_channel.html#a65d6e59622b1efe2816dab34373112df" title="Provides the number of channel rows.">inputs_number()</a>-1. </dd>
+<dd>
+The number of elements in new_row_elements must be <a class="el" href="class_channel.html#ac56a9a5072dfaad157203eec5af1edef" title="Provides the number of channel columns.">outputs_number()</a>.Changes the column at the position of the index argument.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>is an integer argument which corresponds to the row position on the channel. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section pre"><dt>Precondition</dt><dd>The index argument must be between 0 and <a class="el" href="class_channel.html#a65d6e59622b1efe2816dab34373112df" title="Provides the number of channel rows.">inputs_number()</a>-1. </dd>
+<dd>
+The number of elements in new_row_elements must be <a class="el" href="class_channel.html#ac56a9a5072dfaad157203eec5af1edef" title="Provides the number of channel columns.">outputs_number()</a>. </dd></dl>
 
 </div>
 </div>
@@ -274,18 +268,18 @@ Probability distribution channel: the sum each outputs_number elements must be 1
 
 <p>Create another new channel with the same content. </p>
 <dl class="section return"><dt>Returns</dt><dd>A new channel with the same content of this. </dd></dl>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="class_channel.html#a5f15ebd302464069f1a9e3f0ded14482" title="A normal destroyer member.">~Channel()</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd>~Channel() </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a0f3548c7b19e56277e1d4e1ef45896fc"></a>
+<a class="anchor" id="a0af509e5d58004de92b0865ec77f18e7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">vec Channel::get_column </td>
+          <td class="memname"><a class="el" href="types_8h.html#a83246e2fc2d720439cfebe9d273bb053">VectorType</a> Channel::get_column </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a>&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
           <td></td>
         </tr>
@@ -301,25 +295,34 @@ Probability distribution channel: the sum each outputs_number elements must be 1
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd>The index argument must be between 0 and <a class="el" href="class_channel.html#ac56a9a5072dfaad157203eec5af1edef" title="Provides the number of channel columns.">outputs_number()</a>-1. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The columun at the position required. </dd></dl>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="class_channel.html#ac56a9a5072dfaad157203eec5af1edef" title="Provides the number of channel columns.">outputs_number()</a>, <a class="el" href="class_channel.html#a3ff5ec69167a49a5b6deb48ee9277262" title="Return the row at the position the index argument.">get_row</a> (index) </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="class_channel.html#ac56a9a5072dfaad157203eec5af1edef" title="Provides the number of channel columns.">outputs_number()</a>, <a class="el" href="class_channel.html#a1cd4b22c54c090d6c3719e7dda5ca621" title="Checks if the channel is partial simmetrimatrix.">get_row</a> (index) </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a3ff5ec69167a49a5b6deb48ee9277262"></a>
+<a class="anchor" id="a1cd4b22c54c090d6c3719e7dda5ca621"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">vec Channel::get_row </td>
+          <td class="memname"><a class="el" href="types_8h.html#a83246e2fc2d720439cfebe9d273bb053">VectorType</a> Channel::get_row </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a>&#160;</td>
           <td class="paramname"><em>index</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Return the row at the position the index argument. </p>
+<p>Checks if the channel is partial simmetrimatrix. </p>
+<dl class="section return"><dt>Returns</dt><dd>Return True iff the channel matrix is partial simmetrimatrix. </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd>is_simmetric()Checks if the argument is equal to the current channel.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>is a <a class="el" href="class_channel.html" title="A channel matrix class.">Channel</a>. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Return True iff the argument channel matrix is equal to this.Return the row at the position the index argument.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">index</td><td>is an integer argument which corresponds to the row position on the channel. </td></tr>
@@ -328,7 +331,7 @@ Probability distribution channel: the sum each outputs_number elements must be 1
 </dl>
 <dl class="section pre"><dt>Precondition</dt><dd>The index argument must be between 0 and <a class="el" href="class_channel.html#a65d6e59622b1efe2816dab34373112df" title="Provides the number of channel rows.">inputs_number()</a>-1. </dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>The row at the position required. </dd></dl>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="class_channel.html#a65d6e59622b1efe2816dab34373112df" title="Provides the number of channel rows.">inputs_number()</a>,<a class="el" href="class_channel.html#a0f3548c7b19e56277e1d4e1ef45896fc" title="Return the column at the position the index argument.">get_column</a> (index) </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="class_channel.html#a65d6e59622b1efe2816dab34373112df" title="Provides the number of channel rows.">inputs_number()</a>,<a class="el" href="class_channel.html#a0af509e5d58004de92b0865ec77f18e7" title="Return the column at the position the index argument.">get_column</a> (index) </dd></dl>
 
 </div>
 </div>
@@ -350,50 +353,6 @@ Probability distribution channel: the sum each outputs_number elements must be 1
 
 </div>
 </div>
-<a class="anchor" id="a0d7a0a813a3fa559853a4b291fd52ee2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Channel::is_equal_to </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="class_channel.html">Channel</a> &amp;&#160;</td>
-          <td class="paramname"><em>other</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Checks if the argument is equal to the current channel. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">other</td><td>is a <a class="el" href="class_channel.html" title="A channel matrix class.">Channel</a>. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Return True iff the argument channel matrix is equal to this. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="ac69394d99a60663221a64c47b554c366"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Channel::is_partial_symmetric </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Checks if the channel is partial simmetric. </p>
-<dl class="section return"><dt>Returns</dt><dd>Return True iff the channel matrix is partial simmetric. </dd></dl>
-<dl class="section see"><dt>See Also</dt><dd>is_simmetric() </dd></dl>
-
-</div>
-</div>
 <a class="anchor" id="a3b656fcb31a522141b0a9c3e1d4f0fac"></a>
 <div class="memitem">
 <div class="memproto">
@@ -407,27 +366,28 @@ Probability distribution channel: the sum each outputs_number elements must be 1
       </table>
 </div><div class="memdoc">
 
-<p>Checks if the channel is simmetric. </p>
-<dl class="section return"><dt>Returns</dt><dd>Return True iff the channel matrix is simmetric. </dd></dl>
+<p>Checks if the channel is simmetrimatrix. </p>
+<dl class="section return"><dt>Returns</dt><dd>Return True iff the channel matrix is simmetrimatrix. </dd></dl>
 <dl class="section see"><dt>See Also</dt><dd>is_partial_simmetric() </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="acf85bcd04d0ef36a027d9f4eb6e54853"></a>
+<a class="anchor" id="af1b2dcdadaaf756b1614a7f357a19669"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="class_channel.html">Channel</a> Channel::new_id_channel </td>
           <td>(</td>
-          <td class="paramtype">int&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a>&#160;</td>
           <td class="paramname"><em>size</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Generates a new identity channel with the size specified in the argument. </p>
+<p>A normal destroyer member. </p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="class_channel.html#aaaf6b2e79c9c5e10b40ff1aa997695b8" title="A normal constructor member taking 1 argument.">Channel()</a>Generates a new identity channel with the size specified in the argument.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">size</td><td>an integer argument which corresponds to the number of rows and columns of the channel. </td></tr>
@@ -435,7 +395,7 @@ Probability distribution channel: the sum each outputs_number elements must be 1
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>A new identity channel. </dd></dl>
-<dl class="section see"><dt>See Also</dt><dd><a class="el" href="class_channel.html#a5f15ebd302464069f1a9e3f0ded14482" title="A normal destroyer member.">~Channel()</a> </dd></dl>
+<dl class="section see"><dt>See Also</dt><dd>~Channel() </dd></dl>
 
 </div>
 </div>
@@ -483,82 +443,8 @@ Probability distribution channel: the sum each outputs_number elements must be 1
 
 </div>
 </div>
-<a class="anchor" id="af7d0593c017c2cd059b5dbbac4fc9ed9"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Channel::set_row </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>index</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">vec&#160;</td>
-          <td class="paramname"><em>new_row_elements</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Changes the column at the position of the index argument. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">index</td><td>is an integer argument which corresponds to the row position on the channel. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section pre"><dt>Precondition</dt><dd>The index argument must be between 0 and <a class="el" href="class_channel.html#a65d6e59622b1efe2816dab34373112df" title="Provides the number of channel rows.">inputs_number()</a>-1. </dd>
-<dd>
-The number of elements in new_row_elements must be <a class="el" href="class_channel.html#ac56a9a5072dfaad157203eec5af1edef" title="Provides the number of channel columns.">outputs_number()</a>. </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="aad984ccd61e1f152b607046fe4a22cf0"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Channel::set_row </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>index</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">char *&#160;</td>
-          <td class="paramname"><em>new_row_elements</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Changes the column at the position of the index argument. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">index</td><td>is an integer argument which corresponds to the row position on the channel. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section pre"><dt>Precondition</dt><dd>The index argument must be between 0 and <a class="el" href="class_channel.html#a65d6e59622b1efe2816dab34373112df" title="Provides the number of channel rows.">inputs_number()</a>-1. </dd>
-<dd>
-The number of elements in new_row_elements must be <a class="el" href="class_channel.html#ac56a9a5072dfaad157203eec5af1edef" title="Provides the number of channel columns.">outputs_number()</a>. </dd></dl>
-
-</div>
-</div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a26aefeaf9124db82e3c754830c8df8ec"></a>
+<a class="anchor" id="a2d99c5e0ef0927a5c3bce0cd3b933b10"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -566,7 +452,7 @@ The number of elements in new_row_elements must be <a class="el" href="class_cha
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">mat Channel::C</td>
+          <td class="memname"><a class="el" href="types_8h.html#a14a138a4dd5ea1205f8f06edfa2c3dc5">MatrixType</a> Channel::matrix</td>
         </tr>
       </table>
   </td>
@@ -579,6 +465,18 @@ The number of elements in new_row_elements must be <a class="el" href="class_cha
 
 </div>
 </div>
+<a class="anchor" id="a15f642dc97fa0b92828eeaececd07a6c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#ae96f7e0a0a27a61d630bd0e90e5fb7be">StringType</a> Channel::str</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>inc/<a class="el" href="_channel_8h_source.html">Channel.h</a></li>
 <li>src/<a class="el" href="_channel_8cpp.html">Channel.cpp</a></li>
@@ -586,7 +484,7 @@ The number of elements in new_row_elements must be <a class="el" href="class_cha
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 22 2013 20:47:59 for LIBQIF by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 12 2013 21:20:44 for LIBQIF by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -91,23 +91,58 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <a href="_graph_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _QIF_Graph_h_</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _QIF_Graph_h_</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;armadillo&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using namespace </span>arma;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00007"></a><span class="lineno"><a class="code" href="class_graph.html">    7</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_graph.html">Graph</a></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;                </div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;                </div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="code" href="class_graph.html#af5d2f3a1391c306cce3c5421a6f2893f">   13</a></span>&#160;                mat <a class="code" href="class_graph.html#af5d2f3a1391c306cce3c5421a6f2893f">adjacency</a>;</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;};</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span><span class="comment">/*</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">This file belongs to the LIBQIF library.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">A Quantitative Information Flow C++ Toolkit Library.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">Copyright (C) 2013  Universidad Nacional de Río Cuarto(National University of Río Cuarto).</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">Author: Martinelli Fernán - fmartinelli89@gmail.com - Universidad Nacional de Río Cuarto (Argentina)</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">LIBQIF Version: 1.0</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">Date: 12th Nov 2013 </span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">========================================================================</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">This library is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">modify it under the terms of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">License as published by the Free Software Foundation; either</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">version 2.1 of the License, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">This library is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">Lesser General Public License for more details.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">License along with this library; if not, write to the Free Software</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">=========================================================================</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;armadillo&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="types_8h.html">types.h</a>&quot;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="code" href="class_graph.html">   32</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_graph.html">Graph</a></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;{</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                <a class="code" href="class_graph.html#af24cc66b829293167985fc39f48c3ca2">Graph</a>(<a class="code" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a> vertex_num, <a class="code" href="types_8h.html#ae96f7e0a0a27a61d630bd0e90e5fb7be">StringType</a>&amp; edges);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                <a class="code" href="class_graph.html#af24cc66b829293167985fc39f48c3ca2">Graph</a>(<a class="code" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a> vertex_num, std::vector&lt; std::pair&lt;int, int&gt; &gt; &amp; edges);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">//              ~Graph();</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                <a class="code" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a> <a class="code" href="class_graph.html#a8964055ac16b87a5085b85c53d3f294a">vertex_number</a>();</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <span class="keywordtype">bool</span> <a class="code" href="class_graph.html#ac8c7d95482107d3ab01fd31f130d8877">is_an_edge</a>(<a class="code" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a> v1, <a class="code" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a> v2);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <a class="code" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a> <a class="code" href="class_graph.html#a80e6bfb97c5e589c5e7e8373b50429fe">get_distance</a>(<a class="code" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a> v1, <a class="code" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a> v2);</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="code" href="class_graph.html#adaace3b62e6d5063de68882207aa77bf">   46</a></span>&#160;                <a class="code" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a> <a class="code" href="class_graph.html#adaace3b62e6d5063de68882207aa77bf">V</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="code" href="class_graph.html#a44db43029171c38b7dfd0d99b9d6d23b">   47</a></span>&#160;                <a class="code" href="types_8h.html#a14a138a4dd5ea1205f8f06edfa2c3dc5">MatrixType</a> <a class="code" href="class_graph.html#a44db43029171c38b7dfd0d99b9d6d23b">adjacency</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="code" href="class_graph.html#aa8623e17676873e05629452a97308cda">   48</a></span>&#160;                <a class="code" href="types_8h.html#a14a138a4dd5ea1205f8f06edfa2c3dc5">MatrixType</a> <a class="code" href="class_graph.html#aa8623e17676873e05629452a97308cda">distances</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 22 2013 20:47:59 for LIBQIF by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 12 2013 21:20:44 for LIBQIF by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

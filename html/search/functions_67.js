@@ -1,9 +1,12 @@
 var searchData=
 [
-  ['gain',['Gain',['../class_gain.html#ab4116f50e3762cd9890610f1ee91fb19',1,'Gain']]],
-  ['get_5fcolumn',['get_column',['../class_channel.html#a0f3548c7b19e56277e1d4e1ef45896fc',1,'Channel::get_column()'],['../class_gain.html#a6111f243dad0452021aa362f9b90a877',1,'Gain::get_column()']]],
-  ['get_5frow',['get_row',['../class_channel.html#a3ff5ec69167a49a5b6deb48ee9277262',1,'Channel::get_row()'],['../class_gain.html#a428e4b2b33296cd7c04c581b11f33ed5',1,'Gain::get_row()']]],
-  ['gleakage',['GLeakage',['../class_g_leakage.html#a9c02c5e9d251247bd78f42ca3ff3cf03',1,'GLeakage']]],
+  ['g',['G',['../_guessing_8cpp.html#ad81e8f40fa2896247b144e37edc3c5c0',1,'Guessing.cpp']]],
+  ['gain',['Gain',['../class_gain.html#ab5d8d133eb10928a51a5d959e290c4cb',1,'Gain']]],
+  ['get_5fcolumn',['get_column',['../class_channel.html#a0af509e5d58004de92b0865ec77f18e7',1,'Channel::get_column()'],['../class_gain.html#ada204023803ef8fbb9e4976fdebcfdd1',1,'Gain::get_column()']]],
+  ['get_5fdistance',['get_distance',['../class_graph.html#a80e6bfb97c5e589c5e7e8373b50429fe',1,'Graph']]],
+  ['get_5frow',['get_row',['../class_channel.html#a1cd4b22c54c090d6c3719e7dda5ca621',1,'Channel::get_row()'],['../class_gain.html#a03eb00146a3b0e02cc39a0a57aafcc6c',1,'Gain::get_row()']]],
+  ['gleakage',['GLeakage',['../class_g_leakage.html#ace1ccfc96ebdfdc88cea1d22eba4d10d',1,'GLeakage']]],
+  ['graph',['Graph',['../class_graph.html#af24cc66b829293167985fc39f48c3ca2',1,'Graph::Graph(IntType vertex_num, StringType &amp;edges)'],['../class_graph.html#a5bf1f8ea0cd9706f4ab1ff069a4a528b',1,'Graph::Graph(IntType vertex_num, std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;edges)']]],
   ['guesses_5fnumber',['guesses_number',['../class_gain.html#a05cbb3f52eb3d961aebf09f5264b8fb1',1,'Gain']]],
-  ['guessing',['Guessing',['../class_guessing.html#ae2be133c7a6e1387cac8479585ea3365',1,'Guessing']]]
+  ['guessing',['Guessing',['../class_guessing.html#afe072d98eac7b558a4c1b95d34e7b9a3',1,'Guessing']]]
 ];

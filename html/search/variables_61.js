@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['adjacency',['adjacency',['../class_graph.html#af5d2f3a1391c306cce3c5421a6f2893f',1,'Graph']]]
+  ['adjacency',['adjacency',['../class_graph.html#a44db43029171c38b7dfd0d99b9d6d23b',1,'Graph']]]
 ];

@@ -10,8 +10,11 @@ var searchData=
   ['plot3d_5fentropy',['plot3d_entropy',['../class_entropy_model.html#a1d2d78a8f8624ac5cb04f75c28fae11f',1,'EntropyModel']]],
   ['plot3d_5fleakage',['plot3d_leakage',['../class_entropy_model.html#abc5049ca8b1a354dbb2671c3c8c7aab0',1,'EntropyModel']]],
   ['plot3d_5fvulnerability',['plot3d_vulnerability',['../class_entropy_model.html#ae5209d74a52beb875202a9e5d866ffb9',1,'EntropyModel']]],
-  ['plotter',['plotter',['../class_entropy_model.html#a071eea28c8164e2946a9908549c1cf08',1,'EntropyModel']]],
-  ['prob',['Prob',['../class_prob.html',1,'Prob'],['../class_prob.html#ae59e91823f2f379ba0549161b6841e75',1,'Prob::Prob(double *new_vector_elements)'],['../class_prob.html#a0b1180b5f94ff5d7996b6f4a03e6e485',1,'Prob::Prob(char *new_vector_elements)']]],
+  ['plotter_5fflag',['plotter_flag',['../class_entropy_model.html#a99cd89de9e28a7a594371fee5e60a486',1,'EntropyModel']]],
+  ['plus',['plus',['../class_c_matrix.html#a50dc2084efc24806d8b4ee864ee13cdb',1,'CMatrix']]],
+  ['print',['print',['../class_c_matrix.html#a975e430655b3f4e1c43a0c92b42fedde',1,'CMatrix']]],
+  ['prob',['Prob',['../class_prob.html',1,'Prob'],['../class_prob.html#a6c0a3df85891c528bdd49af22ca2895a',1,'Prob::Prob(StringType &amp;new_vector_elements)'],['../class_prob.html#a12e3a9912a8569a0b1922ec844495cd1',1,'Prob::Prob(VectorType &amp;vector_elements)']]],
   ['prob_2ecpp',['Prob.cpp',['../_prob_8cpp.html',1,'']]],
-  ['prob_2eh',['Prob.h',['../_prob_8h.html',1,'']]]
+  ['prob_2eh',['Prob.h',['../_prob_8h.html',1,'']]],
+  ['prob_5fvector',['prob_vector',['../class_prob.html#af89375b01072905d4b22d8b4aae51052',1,'Prob']]]
 ];

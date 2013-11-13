@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['v',['V',['../class_prob.html#a788003968c322a49940db7f71dee3885',1,'Prob']]],
-  ['vulnerability',['vulnerability',['../class_entropy_model.html#a8e43871e9df921a0520c48e8954f3d0a',1,'EntropyModel::vulnerability()'],['../class_g_leakage.html#a471a5dbcc06c46ae55035733d90b0c6f',1,'GLeakage::vulnerability()'],['../class_guessing.html#a391a00b36e80a4beb38c468f11c96903',1,'Guessing::vulnerability()'],['../class_min_entropy.html#ae3d3d5f6ef2c6c33d1b8df4a4e064a73',1,'MinEntropy::vulnerability()'],['../class_shannon.html#a7a1fd0182edfc5da763a9b3cc800b1d2',1,'Shannon::vulnerability()']]]
+  ['v',['V',['../class_graph.html#adaace3b62e6d5063de68882207aa77bf',1,'Graph']]],
+  ['vectortype',['VectorType',['../types_8h.html#a83246e2fc2d720439cfebe9d273bb053',1,'types.h']]],
+  ['vertex_5fnumber',['vertex_number',['../class_graph.html#a8964055ac16b87a5085b85c53d3f294a',1,'Graph']]],
+  ['vulnerability',['vulnerability',['../class_entropy_model.html#a0efa919e10e19b2fb1a2e73030627ba2',1,'EntropyModel::vulnerability()'],['../class_g_leakage.html#a3d4ce0802057ae9561178670d905747c',1,'GLeakage::vulnerability()'],['../class_guessing.html#a4e587eea17cc8d739f0394fa2a05bfdc',1,'Guessing::vulnerability()'],['../class_min_entropy.html#a34909f33f64fc51e99dc6bf07c4001c6',1,'MinEntropy::vulnerability()'],['../class_shannon.html#a7e5a79c2058347b88f5d658913f83c7d',1,'Shannon::vulnerability()']]]
 ];

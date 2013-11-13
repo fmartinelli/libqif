@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -105,24 +105,19 @@ Inheritance diagram for Mechanism:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a7890af9bcf06ae2d693d06e91c56463e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mechanism.html#a7890af9bcf06ae2d693d06e91c56463e">Mechanism</a> (std::string &amp;new_channel_elements, <a class="el" href="class_graph.html">Graph</a> new_graph)</td></tr>
-<tr class="separator:a7890af9bcf06ae2d693d06e91c56463e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1769a521e1295644e51b917402224e48"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mechanism.html#a1769a521e1295644e51b917402224e48">~Mechanism</a> ()</td></tr>
-<tr class="separator:a1769a521e1295644e51b917402224e48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbbfab9c62a9455201719f2343fd3cca"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mechanism.html#acbbfab9c62a9455201719f2343fd3cca">is_diffenrential_private</a> (double epsilon)</td></tr>
-<tr class="separator:acbbfab9c62a9455201719f2343fd3cca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd28a26488eb1a3c3ece161ed7eb3caf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mechanism.html#acd28a26488eb1a3c3ece161ed7eb3caf">Mechanism</a> (<a class="el" href="types_8h.html#ae96f7e0a0a27a61d630bd0e90e5fb7be">StringType</a> &amp;new_channel_elements, <a class="el" href="class_graph.html">Graph</a> &amp;new_graph)</td></tr>
+<tr class="separator:acd28a26488eb1a3c3ece161ed7eb3caf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cc643e3a27a5b10bbe677e3b8e84aaf"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mechanism.html#a9cc643e3a27a5b10bbe677e3b8e84aaf">is_differential_private</a> (<a class="el" href="types_8h.html#a5f642903648a5cbec7a6d8326bc2eed6">DoubleType</a> epsilon)</td></tr>
+<tr class="separator:a9cc643e3a27a5b10bbe677e3b8e84aaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_channel"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_channel')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_channel.html">Channel</a></td></tr>
-<tr class="memitem:a1f2be6e573ea68567bd5183ab8ee86ab inherit pub_methods_class_channel"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#a1f2be6e573ea68567bd5183ab8ee86ab">Channel</a> (std::string &amp;new_channel_elements)</td></tr>
-<tr class="memdesc:a1f2be6e573ea68567bd5183ab8ee86ab inherit pub_methods_class_channel"><td class="mdescLeft">&#160;</td><td class="mdescRight">A normal constructor member taking 1 argument.  <a href="#a1f2be6e573ea68567bd5183ab8ee86ab">More...</a><br/></td></tr>
-<tr class="separator:a1f2be6e573ea68567bd5183ab8ee86ab inherit pub_methods_class_channel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa1feeec8b9834e76776cb49815deaddd inherit pub_methods_class_channel"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#aa1feeec8b9834e76776cb49815deaddd">Channel</a> (mat new_channel_elements)</td></tr>
-<tr class="separator:aa1feeec8b9834e76776cb49815deaddd inherit pub_methods_class_channel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f15ebd302464069f1a9e3f0ded14482 inherit pub_methods_class_channel"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#a5f15ebd302464069f1a9e3f0ded14482">~Channel</a> ()</td></tr>
-<tr class="memdesc:a5f15ebd302464069f1a9e3f0ded14482 inherit pub_methods_class_channel"><td class="mdescLeft">&#160;</td><td class="mdescRight">A normal destroyer member.  <a href="#a5f15ebd302464069f1a9e3f0ded14482">More...</a><br/></td></tr>
-<tr class="separator:a5f15ebd302464069f1a9e3f0ded14482 inherit pub_methods_class_channel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acf85bcd04d0ef36a027d9f4eb6e54853 inherit pub_methods_class_channel"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_channel.html">Channel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#acf85bcd04d0ef36a027d9f4eb6e54853">new_id_channel</a> (int size)</td></tr>
-<tr class="memdesc:acf85bcd04d0ef36a027d9f4eb6e54853 inherit pub_methods_class_channel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a new identity channel with the size specified in the argument.  <a href="#acf85bcd04d0ef36a027d9f4eb6e54853">More...</a><br/></td></tr>
-<tr class="separator:acf85bcd04d0ef36a027d9f4eb6e54853 inherit pub_methods_class_channel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaf6b2e79c9c5e10b40ff1aa997695b8 inherit pub_methods_class_channel"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#aaaf6b2e79c9c5e10b40ff1aa997695b8">Channel</a> (<a class="el" href="types_8h.html#ae96f7e0a0a27a61d630bd0e90e5fb7be">StringType</a> &amp;new_channel_elements)</td></tr>
+<tr class="memdesc:aaaf6b2e79c9c5e10b40ff1aa997695b8 inherit pub_methods_class_channel"><td class="mdescLeft">&#160;</td><td class="mdescRight">A normal constructor member taking 1 argument.  <a href="#aaaf6b2e79c9c5e10b40ff1aa997695b8">More...</a><br/></td></tr>
+<tr class="separator:aaaf6b2e79c9c5e10b40ff1aa997695b8 inherit pub_methods_class_channel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35421f64f6563f32553ac9da107b3f7e inherit pub_methods_class_channel"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#a35421f64f6563f32553ac9da107b3f7e">Channel</a> (<a class="el" href="types_8h.html#a14a138a4dd5ea1205f8f06edfa2c3dc5">MatrixType</a> &amp;new_channel_elements)</td></tr>
+<tr class="separator:a35421f64f6563f32553ac9da107b3f7e inherit pub_methods_class_channel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1b2dcdadaaf756b1614a7f357a19669 inherit pub_methods_class_channel"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_channel.html">Channel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#af1b2dcdadaaf756b1614a7f357a19669">new_id_channel</a> (<a class="el" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a> size)</td></tr>
+<tr class="memdesc:af1b2dcdadaaf756b1614a7f357a19669 inherit pub_methods_class_channel"><td class="mdescLeft">&#160;</td><td class="mdescRight">A normal destroyer member.  <a href="#af1b2dcdadaaf756b1614a7f357a19669">More...</a><br/></td></tr>
+<tr class="separator:af1b2dcdadaaf756b1614a7f357a19669 inherit pub_methods_class_channel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5bbc85ba9c208072ad1e5c83dc4b266a inherit pub_methods_class_channel"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_channel.html">Channel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#a5bbc85ba9c208072ad1e5c83dc4b266a">clone</a> ()</td></tr>
 <tr class="memdesc:a5bbc85ba9c208072ad1e5c83dc4b266a inherit pub_methods_class_channel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create another new channel with the same content.  <a href="#a5bbc85ba9c208072ad1e5c83dc4b266a">More...</a><br/></td></tr>
 <tr class="separator:a5bbc85ba9c208072ad1e5c83dc4b266a inherit pub_methods_class_channel"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -133,59 +128,51 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac56a9a5072dfaad157203eec5af1edef inherit pub_methods_class_channel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Provides the number of channel columns.  <a href="#ac56a9a5072dfaad157203eec5af1edef">More...</a><br/></td></tr>
 <tr class="separator:ac56a9a5072dfaad157203eec5af1edef inherit pub_methods_class_channel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b656fcb31a522141b0a9c3e1d4f0fac inherit pub_methods_class_channel"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#a3b656fcb31a522141b0a9c3e1d4f0fac">is_symmetric</a> ()</td></tr>
-<tr class="memdesc:a3b656fcb31a522141b0a9c3e1d4f0fac inherit pub_methods_class_channel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the channel is simmetric.  <a href="#a3b656fcb31a522141b0a9c3e1d4f0fac">More...</a><br/></td></tr>
+<tr class="memdesc:a3b656fcb31a522141b0a9c3e1d4f0fac inherit pub_methods_class_channel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the channel is simmetrimatrix.  <a href="#a3b656fcb31a522141b0a9c3e1d4f0fac">More...</a><br/></td></tr>
 <tr class="separator:a3b656fcb31a522141b0a9c3e1d4f0fac inherit pub_methods_class_channel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac69394d99a60663221a64c47b554c366 inherit pub_methods_class_channel"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#ac69394d99a60663221a64c47b554c366">is_partial_symmetric</a> ()</td></tr>
-<tr class="memdesc:ac69394d99a60663221a64c47b554c366 inherit pub_methods_class_channel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the channel is partial simmetric.  <a href="#ac69394d99a60663221a64c47b554c366">More...</a><br/></td></tr>
-<tr class="separator:ac69394d99a60663221a64c47b554c366 inherit pub_methods_class_channel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d7a0a813a3fa559853a4b291fd52ee2 inherit pub_methods_class_channel"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#a0d7a0a813a3fa559853a4b291fd52ee2">is_equal_to</a> (const <a class="el" href="class_channel.html">Channel</a> &amp;other)</td></tr>
-<tr class="memdesc:a0d7a0a813a3fa559853a4b291fd52ee2 inherit pub_methods_class_channel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the argument is equal to the current channel.  <a href="#a0d7a0a813a3fa559853a4b291fd52ee2">More...</a><br/></td></tr>
-<tr class="separator:a0d7a0a813a3fa559853a4b291fd52ee2 inherit pub_methods_class_channel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ff5ec69167a49a5b6deb48ee9277262 inherit pub_methods_class_channel"><td class="memItemLeft" align="right" valign="top">vec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#a3ff5ec69167a49a5b6deb48ee9277262">get_row</a> (int index)</td></tr>
-<tr class="memdesc:a3ff5ec69167a49a5b6deb48ee9277262 inherit pub_methods_class_channel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the row at the position the index argument.  <a href="#a3ff5ec69167a49a5b6deb48ee9277262">More...</a><br/></td></tr>
-<tr class="separator:a3ff5ec69167a49a5b6deb48ee9277262 inherit pub_methods_class_channel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f3548c7b19e56277e1d4e1ef45896fc inherit pub_methods_class_channel"><td class="memItemLeft" align="right" valign="top">vec&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#a0f3548c7b19e56277e1d4e1ef45896fc">get_column</a> (int index)</td></tr>
-<tr class="memdesc:a0f3548c7b19e56277e1d4e1ef45896fc inherit pub_methods_class_channel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the column at the position the index argument.  <a href="#a0f3548c7b19e56277e1d4e1ef45896fc">More...</a><br/></td></tr>
-<tr class="separator:a0f3548c7b19e56277e1d4e1ef45896fc inherit pub_methods_class_channel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7d0593c017c2cd059b5dbbac4fc9ed9 inherit pub_methods_class_channel"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#af7d0593c017c2cd059b5dbbac4fc9ed9">set_row</a> (int index, vec new_row_elements)</td></tr>
-<tr class="memdesc:af7d0593c017c2cd059b5dbbac4fc9ed9 inherit pub_methods_class_channel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the column at the position of the index argument.  <a href="#af7d0593c017c2cd059b5dbbac4fc9ed9">More...</a><br/></td></tr>
-<tr class="separator:af7d0593c017c2cd059b5dbbac4fc9ed9 inherit pub_methods_class_channel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad984ccd61e1f152b607046fe4a22cf0 inherit pub_methods_class_channel"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#aad984ccd61e1f152b607046fe4a22cf0">set_row</a> (int index, char *new_row_elements)</td></tr>
-<tr class="memdesc:aad984ccd61e1f152b607046fe4a22cf0 inherit pub_methods_class_channel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the column at the position of the index argument.  <a href="#aad984ccd61e1f152b607046fe4a22cf0">More...</a><br/></td></tr>
-<tr class="separator:aad984ccd61e1f152b607046fe4a22cf0 inherit pub_methods_class_channel"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeae3709d40839c15a012c6f9b5bd5993 inherit pub_methods_class_channel"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#aeae3709d40839c15a012c6f9b5bd5993">at</a> (int index_x, int index_y)</td></tr>
-<tr class="separator:aeae3709d40839c15a012c6f9b5bd5993 inherit pub_methods_class_channel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cd4b22c54c090d6c3719e7dda5ca621 inherit pub_methods_class_channel"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a83246e2fc2d720439cfebe9d273bb053">VectorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#a1cd4b22c54c090d6c3719e7dda5ca621">get_row</a> (<a class="el" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a> index)</td></tr>
+<tr class="memdesc:a1cd4b22c54c090d6c3719e7dda5ca621 inherit pub_methods_class_channel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if the channel is partial simmetrimatrix.  <a href="#a1cd4b22c54c090d6c3719e7dda5ca621">More...</a><br/></td></tr>
+<tr class="separator:a1cd4b22c54c090d6c3719e7dda5ca621 inherit pub_methods_class_channel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0af509e5d58004de92b0865ec77f18e7 inherit pub_methods_class_channel"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a83246e2fc2d720439cfebe9d273bb053">VectorType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#a0af509e5d58004de92b0865ec77f18e7">get_column</a> (<a class="el" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a> index)</td></tr>
+<tr class="memdesc:a0af509e5d58004de92b0865ec77f18e7 inherit pub_methods_class_channel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the column at the position the index argument.  <a href="#a0af509e5d58004de92b0865ec77f18e7">More...</a><br/></td></tr>
+<tr class="separator:a0af509e5d58004de92b0865ec77f18e7 inherit pub_methods_class_channel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac817a004cec4a438b8c3c9513683d6e6 inherit pub_methods_class_channel"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a5f642903648a5cbec7a6d8326bc2eed6">DoubleType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#ac817a004cec4a438b8c3c9513683d6e6">at</a> (<a class="el" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a> index_x, <a class="el" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a> index_y)</td></tr>
+<tr class="memdesc:ac817a004cec4a438b8c3c9513683d6e6 inherit pub_methods_class_channel"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the column at the position of the index argument.  <a href="#ac817a004cec4a438b8c3c9513683d6e6">More...</a><br/></td></tr>
+<tr class="separator:ac817a004cec4a438b8c3c9513683d6e6 inherit pub_methods_class_channel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a0869d42d25524e8ba3a290148d0427c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_graph.html">Graph</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mechanism.html#a0869d42d25524e8ba3a290148d0427c8">graph</a></td></tr>
-<tr class="separator:a0869d42d25524e8ba3a290148d0427c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd6eff255fa9fedbcde5c15f7a6f034b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_graph.html">Graph</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_mechanism.html#afd6eff255fa9fedbcde5c15f7a6f034b">graph</a></td></tr>
+<tr class="separator:afd6eff255fa9fedbcde5c15f7a6f034b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_channel"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_channel')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_channel.html">Channel</a></td></tr>
-<tr class="memitem:a26aefeaf9124db82e3c754830c8df8ec inherit pro_attribs_class_channel"><td class="memItemLeft" align="right" valign="top">mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#a26aefeaf9124db82e3c754830c8df8ec">C</a></td></tr>
-<tr class="separator:a26aefeaf9124db82e3c754830c8df8ec inherit pro_attribs_class_channel"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d99c5e0ef0927a5c3bce0cd3b933b10 inherit pro_attribs_class_channel"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a14a138a4dd5ea1205f8f06edfa2c3dc5">MatrixType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#a2d99c5e0ef0927a5c3bce0cd3b933b10">matrix</a></td></tr>
+<tr class="separator:a2d99c5e0ef0927a5c3bce0cd3b933b10 inherit pro_attribs_class_channel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_attribs_class_channel"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_channel')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_channel.html">Channel</a></td></tr>
+<tr class="memitem:a15f642dc97fa0b92828eeaececd07a6c inherit pub_attribs_class_channel"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#ae96f7e0a0a27a61d630bd0e90e5fb7be">StringType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#a15f642dc97fa0b92828eeaececd07a6c">str</a></td></tr>
+<tr class="separator:a15f642dc97fa0b92828eeaececd07a6c inherit pub_attribs_class_channel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_channel"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_channel')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_channel.html">Channel</a></td></tr>
 <tr class="memitem:a8b5d925e7a8d98d0a3e8309506f63ca6 inherit pro_methods_class_channel"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_channel.html#a8b5d925e7a8d98d0a3e8309506f63ca6">rep_ok</a> ()</td></tr>
 <tr class="memdesc:a8b5d925e7a8d98d0a3e8309506f63ca6 inherit pro_methods_class_channel"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method checks the invariant representation of the class.  <a href="#a8b5d925e7a8d98d0a3e8309506f63ca6">More...</a><br/></td></tr>
 <tr class="separator:a8b5d925e7a8d98d0a3e8309506f63ca6 inherit pro_methods_class_channel"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a7890af9bcf06ae2d693d06e91c56463e"></a>
+<a class="anchor" id="acd28a26488eb1a3c3ece161ed7eb3caf"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">Mechanism::Mechanism </td>
           <td>(</td>
-          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ae96f7e0a0a27a61d630bd0e90e5fb7be">StringType</a> &amp;&#160;</td>
           <td class="paramname"><em>new_channel_elements</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="class_graph.html">Graph</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="class_graph.html">Graph</a> &amp;&#160;</td>
           <td class="paramname"><em>new_graph</em>&#160;</td>
         </tr>
         <tr>
@@ -198,30 +185,15 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a1769a521e1295644e51b917402224e48"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Mechanism::~Mechanism </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="acbbfab9c62a9455201719f2343fd3cca"></a>
+<a class="anchor" id="a9cc643e3a27a5b10bbe677e3b8e84aaf"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Mechanism::is_diffenrential_private </td>
+          <td class="memname">bool Mechanism::is_differential_private </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a5f642903648a5cbec7a6d8326bc2eed6">DoubleType</a>&#160;</td>
           <td class="paramname"><em>epsilon</em></td><td>)</td>
           <td></td>
         </tr>
@@ -231,7 +203,7 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a0869d42d25524e8ba3a290148d0427c8"></a>
+<a class="anchor" id="afd6eff255fa9fedbcde5c15f7a6f034b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -239,7 +211,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="class_graph.html">Graph</a> Mechanism::graph</td>
+          <td class="memname"><a class="el" href="class_graph.html">Graph</a>* Mechanism::graph</td>
         </tr>
       </table>
   </td>
@@ -258,7 +230,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 22 2013 20:47:59 for LIBQIF by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 12 2013 21:20:44 for LIBQIF by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

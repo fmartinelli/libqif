@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -84,6 +84,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="class_graph-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -93,13 +94,151 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p><code>#include &lt;<a class="el" href="_graph_8h_source.html">Graph.h</a>&gt;</code></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:af24cc66b829293167985fc39f48c3ca2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#af24cc66b829293167985fc39f48c3ca2">Graph</a> (<a class="el" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a> vertex_num, <a class="el" href="types_8h.html#ae96f7e0a0a27a61d630bd0e90e5fb7be">StringType</a> &amp;edges)</td></tr>
+<tr class="separator:af24cc66b829293167985fc39f48c3ca2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5bf1f8ea0cd9706f4ab1ff069a4a528b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#a5bf1f8ea0cd9706f4ab1ff069a4a528b">Graph</a> (<a class="el" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a> vertex_num, std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;edges)</td></tr>
+<tr class="separator:a5bf1f8ea0cd9706f4ab1ff069a4a528b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8964055ac16b87a5085b85c53d3f294a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#a8964055ac16b87a5085b85c53d3f294a">vertex_number</a> ()</td></tr>
+<tr class="separator:a8964055ac16b87a5085b85c53d3f294a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8c7d95482107d3ab01fd31f130d8877"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#ac8c7d95482107d3ab01fd31f130d8877">is_an_edge</a> (<a class="el" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a> v1, <a class="el" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a> v2)</td></tr>
+<tr class="separator:ac8c7d95482107d3ab01fd31f130d8877"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80e6bfb97c5e589c5e7e8373b50429fe"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#a80e6bfb97c5e589c5e7e8373b50429fe">get_distance</a> (<a class="el" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a> v1, <a class="el" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a> v2)</td></tr>
+<tr class="separator:a80e6bfb97c5e589c5e7e8373b50429fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:af5d2f3a1391c306cce3c5421a6f2893f"><td class="memItemLeft" align="right" valign="top">mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#af5d2f3a1391c306cce3c5421a6f2893f">adjacency</a></td></tr>
-<tr class="separator:af5d2f3a1391c306cce3c5421a6f2893f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaace3b62e6d5063de68882207aa77bf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#adaace3b62e6d5063de68882207aa77bf">V</a></td></tr>
+<tr class="separator:adaace3b62e6d5063de68882207aa77bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44db43029171c38b7dfd0d99b9d6d23b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a14a138a4dd5ea1205f8f06edfa2c3dc5">MatrixType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#a44db43029171c38b7dfd0d99b9d6d23b">adjacency</a></td></tr>
+<tr class="separator:a44db43029171c38b7dfd0d99b9d6d23b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8623e17676873e05629452a97308cda"><td class="memItemLeft" align="right" valign="top"><a class="el" href="types_8h.html#a14a138a4dd5ea1205f8f06edfa2c3dc5">MatrixType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_graph.html#aa8623e17676873e05629452a97308cda">distances</a></td></tr>
+<tr class="separator:aa8623e17676873e05629452a97308cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="af24cc66b829293167985fc39f48c3ca2"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Graph::Graph </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a>&#160;</td>
+          <td class="paramname"><em>vertex_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#ae96f7e0a0a27a61d630bd0e90e5fb7be">StringType</a> &amp;&#160;</td>
+          <td class="paramname"><em>edges</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a5bf1f8ea0cd9706f4ab1ff069a4a528b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Graph::Graph </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a>&#160;</td>
+          <td class="paramname"><em>vertex_num</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;&#160;</td>
+          <td class="paramname"><em>edges</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a80e6bfb97c5e589c5e7e8373b50429fe"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Graph::get_distance </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a>&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a>&#160;</td>
+          <td class="paramname"><em>v2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ac8c7d95482107d3ab01fd31f130d8877"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Graph::is_an_edge </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a>&#160;</td>
+          <td class="paramname"><em>v1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a>&#160;</td>
+          <td class="paramname"><em>v2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a8964055ac16b87a5085b85c53d3f294a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a> Graph::vertex_number </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="af5d2f3a1391c306cce3c5421a6f2893f"></a>
+<a class="anchor" id="a44db43029171c38b7dfd0d99b9d6d23b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -107,7 +246,7 @@ Protected Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">mat Graph::adjacency</td>
+          <td class="memname"><a class="el" href="types_8h.html#a14a138a4dd5ea1205f8f06edfa2c3dc5">MatrixType</a> Graph::adjacency</td>
         </tr>
       </table>
   </td>
@@ -119,13 +258,54 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+<a class="anchor" id="aa8623e17676873e05629452a97308cda"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a14a138a4dd5ea1205f8f06edfa2c3dc5">MatrixType</a> Graph::distances</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="adaace3b62e6d5063de68882207aa77bf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a> Graph::V</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li>inc/<a class="el" href="_graph_8h_source.html">Graph.h</a></li>
+<li>src/<a class="el" href="_graph_8cpp.html">Graph.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 22 2013 20:47:59 for LIBQIF by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 12 2013 21:20:44 for LIBQIF by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

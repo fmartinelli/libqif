@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -90,11 +90,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="class_graph.html">Graph</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="class_graph.html#af5d2f3a1391c306cce3c5421a6f2893f">adjacency</a></td><td class="entry"><a class="el" href="class_graph.html">Graph</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_graph.html#a44db43029171c38b7dfd0d99b9d6d23b">adjacency</a></td><td class="entry"><a class="el" href="class_graph.html">Graph</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_graph.html#aa8623e17676873e05629452a97308cda">distances</a></td><td class="entry"><a class="el" href="class_graph.html">Graph</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_graph.html#a80e6bfb97c5e589c5e7e8373b50429fe">get_distance</a>(IntType v1, IntType v2)</td><td class="entry"><a class="el" href="class_graph.html">Graph</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_graph.html#af24cc66b829293167985fc39f48c3ca2">Graph</a>(IntType vertex_num, StringType &amp;edges)</td><td class="entry"><a class="el" href="class_graph.html">Graph</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_graph.html#a5bf1f8ea0cd9706f4ab1ff069a4a528b">Graph</a>(IntType vertex_num, std::vector&lt; std::pair&lt; int, int &gt; &gt; &amp;edges)</td><td class="entry"><a class="el" href="class_graph.html">Graph</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="class_graph.html#ac8c7d95482107d3ab01fd31f130d8877">is_an_edge</a>(IntType v1, IntType v2)</td><td class="entry"><a class="el" href="class_graph.html">Graph</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="class_graph.html#adaace3b62e6d5063de68882207aa77bf">V</a></td><td class="entry"><a class="el" href="class_graph.html">Graph</a></td><td class="entry"><span class="mlabel">protected</span></td></tr>
+  <tr><td class="entry"><a class="el" href="class_graph.html#a8964055ac16b87a5085b85c53d3f294a">vertex_number</a>()</td><td class="entry"><a class="el" href="class_graph.html">Graph</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 22 2013 20:47:59 for LIBQIF by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 12 2013 21:20:44 for LIBQIF by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

@@ -1,7 +1,10 @@
 var searchData=
 [
-  ['set_5frow',['set_row',['../class_channel.html#af7d0593c017c2cd059b5dbbac4fc9ed9',1,'Channel::set_row(int index, vec new_row_elements)'],['../class_channel.html#aad984ccd61e1f152b607046fe4a22cf0',1,'Channel::set_row(int index, char *new_row_elements)'],['../class_gain.html#af36592bb6212dba713a51f3612e8413a',1,'Gain::set_row(int index, vec new_row_elements)'],['../class_gain.html#affe4e3cbe165323e1c86438bb2f76694',1,'Gain::set_row(int index, char *new_row_elements)']]],
-  ['shannon',['Shannon',['../class_shannon.html#afcbffcd25fccec1dea20a9a1ad3caf16',1,'Shannon']]],
+  ['scijob',['scijob',['../class_c_matrix.html#a73e20448a9ac7b6b53c50b6922302c8c',1,'CMatrix']]],
+  ['send_5fscilab_5fjob',['send_scilab_job',['../ccmatrix1_8cpp.html#a10cf6670bad71a0a38edcfd5c66c1f59',1,'ccmatrix1.cpp']]],
+  ['sendscilabjob',['SendScilabJob',['../ccmatrix1_8cc.html#a6195e58190c5dc896cb6ede6bc1afb8c',1,'SendScilabJob(char *):&#160;ccmatrix1.cc'],['../myprog_8c.html#ab3e4096e18913b8b509e467f84b7f574',1,'SendScilabJob(char *job):&#160;myprog.c']]],
+  ['shannon',['Shannon',['../class_shannon.html#a934f4c34216cd61c286d9a2175171ef8',1,'Shannon']]],
   ['size',['size',['../class_prob.html#a1625295632fb501713c3ceca6b3c642d',1,'Prob']]],
-  ['solve',['solve',['../class_linear_program.html#a95cd9a1a0e255bd1efc799a2fd265869',1,'LinearProgram::solve(char *equality, char *inequality, char *objective)'],['../class_linear_program.html#af03efa6091cd4470f960168dce10adda',1,'LinearProgram::solve(mat equality, mat inequality, vec objective)'],['../class_linear_program.html#a7c474725f65721bb2bf5e6fa4ce8121f',1,'LinearProgram::solve(char *equality, char *inequality, char *objective, char *rows_constraints)'],['../class_linear_program.html#ad6e85eac75409c09612e79cb367e0148',1,'LinearProgram::solve(mat equality, mat inequality, vec objective, mat rows_constraints)']]]
+  ['solve',['solve',['../class_linear_program.html#af58ee4754a81c9ed385b99ce7222c5dd',1,'LinearProgram::solve(StringType &amp;equality, StringType &amp;inequality, StringType &amp;objective)'],['../class_linear_program.html#a645975f2522120a0ff4ba3d8df1f2867',1,'LinearProgram::solve(MatrixType equality, MatrixType inequality, VectorType objective)'],['../class_linear_program.html#aed94955f60cb542c785dc176c375bdcc',1,'LinearProgram::solve(StringType &amp;equality, StringType &amp;inequality, StringType &amp;objective, StringType &amp;rows_constraints)'],['../class_linear_program.html#af4b53eac5b545d1031f0ec9511e1fbd9',1,'LinearProgram::solve(MatrixType equality, MatrixType inequality, VectorType objective, MatrixType rows_constraints)']]],
+  ['startscilab',['StartScilab',['../myprog_8c.html#a48425dff551747f6fca753f7bfb454a2',1,'myprog.c']]]
 ];

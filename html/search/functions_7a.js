@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zeros',['zeros',['../class_gain.html#af22c40b19875a4a3489a44bd43a82422',1,'Gain']]]
+  ['zeros',['zeros',['../class_gain.html#ab05a634a88ffa51e2f5ed1d9214b52cb',1,'Gain']]]
 ];
