@@ -80,7 +80,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -92,32 +92,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 &#160;<ul>
 <li>adjacency
-: <a class="el" href="class_graph.html#af5d2f3a1391c306cce3c5421a6f2893f">Graph</a>
+: <a class="el" href="class_graph.html#a44db43029171c38b7dfd0d99b9d6d23b">Graph</a>
 </li>
 <li>C
-: <a class="el" href="class_channel.html#a26aefeaf9124db82e3c754830c8df8ec">Channel</a>
-, <a class="el" href="class_shannon.html#a559daba1569ab949b7a2357790d61f53">Shannon</a>
-, <a class="el" href="class_min_entropy.html#aa949a888e927ec01911882aa909f8b3b">MinEntropy</a>
-, <a class="el" href="class_g_leakage.html#a3c95b314317774dbf3d93892211eea7d">GLeakage</a>
-, <a class="el" href="class_gain.html#afa7f68f56c63a1eed86718ca2ab826fa">Gain</a>
+: <a class="el" href="class_entropy_model.html#afa75519d0d08eb91db5f7d3a10353448">EntropyModel</a>
+</li>
+<li>distances
+: <a class="el" href="class_graph.html#aa8623e17676873e05629452a97308cda">Graph</a>
 </li>
 <li>g
-: <a class="el" href="class_g_leakage.html#ac1298a9062e180d3ead7df5fb80cdccc">GLeakage</a>
+: <a class="el" href="class_entropy_model.html#a13aee33d77a44c68bf2cfc9f4192c964">EntropyModel</a>
 </li>
 <li>graph
-: <a class="el" href="class_mechanism.html#a0869d42d25524e8ba3a290148d0427c8">Mechanism</a>
+: <a class="el" href="class_mechanism.html#afd6eff255fa9fedbcde5c15f7a6f034b">Mechanism</a>
 </li>
-<li>plotter
-: <a class="el" href="class_entropy_model.html#a071eea28c8164e2946a9908549c1cf08">EntropyModel</a>
+<li>matrix
+: <a class="el" href="class_channel.html#a2d99c5e0ef0927a5c3bce0cd3b933b10">Channel</a>
+, <a class="el" href="class_gain.html#a7cbd1ededb85d68fab0f04ea34ed3eac">Gain</a>
+</li>
+<li>plotter_flag
+: <a class="el" href="class_entropy_model.html#a99cd89de9e28a7a594371fee5e60a486">EntropyModel</a>
+</li>
+<li>prob_vector
+: <a class="el" href="class_prob.html#af89375b01072905d4b22d8b4aae51052">Prob</a>
+</li>
+<li>str
+: <a class="el" href="class_channel.html#a15f642dc97fa0b92828eeaececd07a6c">Channel</a>
+, <a class="el" href="class_prob.html#a447c004033b76b1ef782f57f7f470ef2">Prob</a>
+, <a class="el" href="class_gain.html#a23bc367fcfeee2caf0d04c91a69ef510">Gain</a>
 </li>
 <li>V
-: <a class="el" href="class_prob.html#a788003968c322a49940db7f71dee3885">Prob</a>
+: <a class="el" href="class_graph.html#adaace3b62e6d5063de68882207aa77bf">Graph</a>
 </li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 22 2013 20:47:59 for LIBQIF by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 12 2013 21:20:44 for LIBQIF by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

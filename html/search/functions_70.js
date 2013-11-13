@@ -10,5 +10,7 @@ var searchData=
   ['plot3d_5fentropy',['plot3d_entropy',['../class_entropy_model.html#a1d2d78a8f8624ac5cb04f75c28fae11f',1,'EntropyModel']]],
   ['plot3d_5fleakage',['plot3d_leakage',['../class_entropy_model.html#abc5049ca8b1a354dbb2671c3c8c7aab0',1,'EntropyModel']]],
   ['plot3d_5fvulnerability',['plot3d_vulnerability',['../class_entropy_model.html#ae5209d74a52beb875202a9e5d866ffb9',1,'EntropyModel']]],
-  ['prob',['Prob',['../class_prob.html#ae59e91823f2f379ba0549161b6841e75',1,'Prob::Prob(double *new_vector_elements)'],['../class_prob.html#a0b1180b5f94ff5d7996b6f4a03e6e485',1,'Prob::Prob(char *new_vector_elements)']]]
+  ['plus',['plus',['../class_c_matrix.html#a50dc2084efc24806d8b4ee864ee13cdb',1,'CMatrix']]],
+  ['print',['print',['../class_c_matrix.html#a975e430655b3f4e1c43a0c92b42fedde',1,'CMatrix']]],
+  ['prob',['Prob',['../class_prob.html#a6c0a3df85891c528bdd49af22ca2895a',1,'Prob::Prob(StringType &amp;new_vector_elements)'],['../class_prob.html#a12e3a9912a8569a0b1922ec844495cd1',1,'Prob::Prob(VectorType &amp;vector_elements)']]]
 ];

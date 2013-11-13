@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -91,36 +91,57 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <a href="_shannon_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _QIF_Shannon_h_</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _QIF_Shannon_h_</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_prob_8h.html">Prob.h</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_channel_8h.html">Channel.h</a>&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_entropy_model_8h.html">EntropyModel.h</a>&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="code" href="class_shannon.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_shannon.html" title="The shannon model of entropy.">Shannon</a> : <span class="keyword">public</span> <a class="code" href="class_entropy_model.html" title="A generic model of entropy that defines the basic function to compute and plot.">EntropyModel</a></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;                <a class="code" href="class_shannon.html#afcbffcd25fccec1dea20a9a1ad3caf16">Shannon</a>(<a class="code" href="class_channel.html" title="A channel matrix class.">Channel</a> c);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;                <a class="code" href="class_shannon.html#a8b013496ba0a5a7787cbf5e5ca282af4">~Shannon</a>();</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                <span class="keywordtype">double</span> <a class="code" href="class_shannon.html#a7a1fd0182edfc5da763a9b3cc800b1d2">vulnerability</a>(<a class="code" href="class_prob.html" title="A probability distribution vector class.">Prob</a> pi);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                        </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                <span class="keywordtype">double</span> <a class="code" href="class_shannon.html#acc1bd8a571215ed7da3ffeeffd02584e">cond_vulnerability</a>(<a class="code" href="class_prob.html" title="A probability distribution vector class.">Prob</a> pi);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                        </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                <span class="keywordtype">double</span> <a class="code" href="class_shannon.html#afe8cb53447fbe422d4d5da13defca50b">leakage</a>(<a class="code" href="class_prob.html" title="A probability distribution vector class.">Prob</a> pi);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                        </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                <span class="keywordtype">double</span> <a class="code" href="class_shannon.html#a0d37cfa8745740bd70d8d587906e4140">entropy</a>(<a class="code" href="class_prob.html" title="A probability distribution vector class.">Prob</a> pi);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                        </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                <span class="keywordtype">double</span> <a class="code" href="class_shannon.html#a64f580a2f28ee2507636327d62a62222">cond_entropy</a>(<a class="code" href="class_prob.html" title="A probability distribution vector class.">Prob</a> pi);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                        </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                <span class="keywordtype">double</span> <a class="code" href="class_shannon.html#a4dc38e856d6540e1df14c3d5bf5db294">capacity</a>();</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="code" href="class_shannon.html#a559daba1569ab949b7a2357790d61f53">   31</a></span>&#160;                <a class="code" href="class_channel.html" title="A channel matrix class.">Channel</a>* <a class="code" href="class_shannon.html#a559daba1569ab949b7a2357790d61f53">C</a>;             </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;};</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span><span class="comment">/*</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">This file belongs to the LIBQIF library.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">A Quantitative Information Flow C++ Toolkit Library.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">Copyright (C) 2013  Universidad Nacional de Río Cuarto(National University of Río Cuarto).</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">Author: Martinelli Fernán - fmartinelli89@gmail.com - Universidad Nacional de Río Cuarto (Argentina)</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">LIBQIF Version: 1.0</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">Date: 12th Nov 2013 </span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">========================================================================</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">This library is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">modify it under the terms of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">License as published by the Free Software Foundation; either</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">version 2.1 of the License, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">This library is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">Lesser General Public License for more details.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">License along with this library; if not, write to the Free Software</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">=========================================================================</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_entropy_model_8h.html">EntropyModel.h</a>&quot;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="code" href="class_shannon.html">   33</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_shannon.html" title="The shannon model of entropy.">Shannon</a> : <span class="keyword">public</span> <a class="code" href="class_entropy_model.html" title="A generic model of entropy that defines the basic function to compute and plot.">EntropyModel</a></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                <a class="code" href="class_shannon.html#a934f4c34216cd61c286d9a2175171ef8">Shannon</a>(<a class="code" href="class_channel.html" title="A channel matrix class.">Channel</a>&amp; c);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">//              ~Shannon();</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                <a class="code" href="types_8h.html#a5f642903648a5cbec7a6d8326bc2eed6">DoubleType</a> <a class="code" href="class_shannon.html#a7e5a79c2058347b88f5d658913f83c7d">vulnerability</a>(<a class="code" href="class_prob.html" title="A probability distribution vector class.">Prob</a>&amp; pi);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                        </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <a class="code" href="types_8h.html#a5f642903648a5cbec7a6d8326bc2eed6">DoubleType</a> <a class="code" href="class_shannon.html#a184d530614342a62868a49958e3b9c54">cond_vulnerability</a>(<a class="code" href="class_prob.html" title="A probability distribution vector class.">Prob</a>&amp; pi);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                        </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                <a class="code" href="types_8h.html#a5f642903648a5cbec7a6d8326bc2eed6">DoubleType</a> <a class="code" href="class_shannon.html#a13b1eb5bf8f46ede01154672e5a87f42">leakage</a>(<a class="code" href="class_prob.html" title="A probability distribution vector class.">Prob</a>&amp; pi);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                        </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <a class="code" href="types_8h.html#a5f642903648a5cbec7a6d8326bc2eed6">DoubleType</a> <a class="code" href="class_shannon.html#a458ab6fbc925c4af8ccedadcb0b45995">entropy</a>(<a class="code" href="class_prob.html" title="A probability distribution vector class.">Prob</a>&amp; pi);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                        </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                <a class="code" href="types_8h.html#a5f642903648a5cbec7a6d8326bc2eed6">DoubleType</a> <a class="code" href="class_shannon.html#aedff2c3346e668a9b939023be3b12c25">cond_entropy</a>(<a class="code" href="class_prob.html" title="A probability distribution vector class.">Prob</a>&amp; pi);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                        </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                <a class="code" href="types_8h.html#a5f642903648a5cbec7a6d8326bc2eed6">DoubleType</a> <a class="code" href="class_shannon.html#af54d6ed1faea63bb5c41b81b9a0409ed">capacity</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="code" href="class_shannon.html#a69dbcc522fbc337ae28996f0c5fadffe">   52</a></span>&#160;                <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="class_shannon.html#a69dbcc522fbc337ae28996f0c5fadffe">class_name</a>() { <span class="keywordflow">return</span> <span class="stringliteral">&quot;Shannon&quot;</span>;}</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 22 2013 20:47:59 for LIBQIF by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 12 2013 21:20:44 for LIBQIF by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

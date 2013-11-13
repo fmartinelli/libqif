@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['g',['g',['../class_g_leakage.html#ac1298a9062e180d3ead7df5fb80cdccc',1,'GLeakage']]],
-  ['graph',['graph',['../class_mechanism.html#a0869d42d25524e8ba3a290148d0427c8',1,'Mechanism']]]
+  ['g',['g',['../class_entropy_model.html#a13aee33d77a44c68bf2cfc9f4192c964',1,'EntropyModel']]],
+  ['graph',['graph',['../class_mechanism.html#afd6eff255fa9fedbcde5c15f7a6f034b',1,'Mechanism']]]
 ];

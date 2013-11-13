@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Typedefs</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -91,52 +91,77 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <a href="_prob_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef _QIF_Prob_h_</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#define _QIF_Prob_h_</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;armadillo&gt;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">using namespace </span>arma;</div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="code" href="class_prob.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_prob.html" title="A probability distribution vector class.">Prob</a></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                <a class="code" href="class_prob.html" title="A probability distribution vector class.">Prob</a> (<span class="keywordtype">double</span>* new_vector_elements );</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                <a class="code" href="class_prob.html" title="A probability distribution vector class.">Prob</a> (<span class="keywordtype">char</span>* new_vector_elements );</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                ~<a class="code" href="class_prob.html" title="A probability distribution vector class.">Prob</a> ();</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                <span class="keywordtype">int</span> size();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor"></span><span class="comment">/*</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">This file belongs to the LIBQIF library.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">A Quantitative Information Flow C++ Toolkit Library.</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">Copyright (C) 2013  Universidad Nacional de Río Cuarto(National University of Río Cuarto).</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">Author: Martinelli Fernán - fmartinelli89@gmail.com - Universidad Nacional de Río Cuarto (Argentina)</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">LIBQIF Version: 1.0</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">Date: 12th Nov 2013 </span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">========================================================================</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">This library is free software; you can redistribute it and/or</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">modify it under the terms of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">License as published by the Free Software Foundation; either</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">version 2.1 of the License, or (at your option) any later version.</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">This library is distributed in the hope that it will be useful,</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">Lesser General Public License for more details.</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">You should have received a copy of the GNU Lesser General Public</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">License along with this library; if not, write to the Free Software</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">=========================================================================</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;armadillo&gt;</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="types_8h.html">types.h</a>&quot;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="code" href="class_prob.html">   34</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_prob.html" title="A probability distribution vector class.">Prob</a></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;{</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="code" href="class_prob.html#a447c004033b76b1ef782f57f7f470ef2">   37</a></span>&#160;                <a class="code" href="types_8h.html#ae96f7e0a0a27a61d630bd0e90e5fb7be">StringType</a> <a class="code" href="class_prob.html#a447c004033b76b1ef782f57f7f470ef2">str</a>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                <span class="comment">//Prob (double* new_vector_elements );</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                <span class="keywordtype">double</span> at ( <span class="keywordtype">int</span> index );</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00059"></a><span class="lineno"><a class="code" href="class_prob.html#a788003968c322a49940db7f71dee3885">   59</a></span>&#160;                vec <a class="code" href="class_prob.html#a788003968c322a49940db7f71dee3885">V</a>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="code" href="class_prob.html#ad24759f9ddf7f6e45198b4e073317182">   66</a></span>&#160;                <span class="keywordtype">bool</span> rep_ok()</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                        vec::iterator c = V.begin();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                        vec::iterator d = V.end();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                        <span class="keywordtype">double</span> sum = 0; <span class="comment">//sumation used to check.</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                        <span class="keywordtype">bool</span> result = <span class="keyword">true</span>; <span class="comment">//flag used to control.</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                        <span class="keywordflow">for</span> ( mat::iterator i = c; i != d &amp;&amp; result; ++i )</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                        {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                sum += ( *i );</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                result = result &amp;&amp; ( *i ) &gt;= 0; <span class="comment">// all the elements are greater than or equal to 0.</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                        }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                        result = result &amp;&amp; sum == 1; <span class="comment">//the sum of each row is 1.</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                        <span class="keywordflow">return</span> result;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;};</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <a class="code" href="class_prob.html#a6c0a3df85891c528bdd49af22ca2895a" title="A normal constructor member taking 1 argument.">Prob</a>(<a class="code" href="types_8h.html#ae96f7e0a0a27a61d630bd0e90e5fb7be">StringType</a>&amp; new_vector_elements);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                <a class="code" href="class_prob.html#a6c0a3df85891c528bdd49af22ca2895a" title="A normal constructor member taking 1 argument.">Prob</a>(<a class="code" href="types_8h.html#a83246e2fc2d720439cfebe9d273bb053">VectorType</a>&amp; vector_elements);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                <span class="comment">//~Prob ();</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                <a class="code" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a> <a class="code" href="class_prob.html#a1625295632fb501713c3ceca6b3c642d" title="normal destroyer member.">size</a>();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                <a class="code" href="types_8h.html#a5f642903648a5cbec7a6d8326bc2eed6">DoubleType</a> <a class="code" href="class_prob.html#a7de3668a9613d8527c1aa08d8fc9af5f" title="A function wich takes an index position and returns the choosen element.">at</a>(<a class="code" href="types_8h.html#a8aa8ce08e1f28e2d8f3b3f8400a0fa63">IntType</a> index);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00084"></a><span class="lineno"><a class="code" href="class_prob.html#af89375b01072905d4b22d8b4aae51052">   84</a></span>&#160;                <a class="code" href="types_8h.html#a83246e2fc2d720439cfebe9d273bb053">VectorType</a> <a class="code" href="class_prob.html#af89375b01072905d4b22d8b4aae51052">prob_vector</a>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="code" href="class_prob.html#ad24759f9ddf7f6e45198b4e073317182">   91</a></span>&#160;                <span class="keywordtype">bool</span> <a class="code" href="class_prob.html#ad24759f9ddf7f6e45198b4e073317182" title="This method checks the invariant representation of the class.">rep_ok</a>()</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                {</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;                        arma::vec::iterator c = <a class="code" href="class_prob.html#af89375b01072905d4b22d8b4aae51052">prob_vector</a>.begin();</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                        arma::vec::iterator d = <a class="code" href="class_prob.html#af89375b01072905d4b22d8b4aae51052">prob_vector</a>.end();</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                        <span class="keywordtype">double</span> sum = 0; <span class="comment">//sumation used to check.</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                        <span class="keywordtype">bool</span> result = <span class="keyword">true</span>; <span class="comment">//flag used to control.</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                        <span class="keywordflow">for</span> ( arma::vec::iterator i = c; i != d &amp;&amp; result; ++i )</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                        {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                                sum += ( *i );</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                                result = result &amp;&amp; ( *i ) &gt;= 0; <span class="comment">// all the elements are greater than or equal to 0.</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                        }</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                        result = result &amp;&amp; sum == 1; <span class="comment">//the sum of each row is 1.</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                        <span class="keywordflow">return</span> result;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;};</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Oct 22 2013 20:47:59 for LIBQIF by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Nov 12 2013 21:20:44 for LIBQIF by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.3.1
 </small></address>

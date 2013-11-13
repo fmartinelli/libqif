@@ -1,25 +1,4 @@
 var searchData=
 [
-  ['m',['m',['../structscisparse.html#a836c5f7f441bafc65b2c8e0e463aa1c0',1,'scisparse::m()'],['../structsciintmat.html#aebcc62bc6c2eef0ed9058e0c3f5ebeb5',1,'sciintmat::m()'],['../structrhs__opts____.html#ab6a7b2e60054d606aa13f672c34b2130',1,'rhs_opts__::m()']]],
-  ['macnms',['macnms',['../struct_d_b_g__struct.html#a3dffb1729fde27eafe367e5c84f2fdea',1,'DBG_struct']]],
-  ['macr',['macr',['../struct_r_e_c_u__struct.html#a6c1d89cf979ef8d83d7b1beab01e9786',1,'RECU_struct']]],
-  ['mask',['mask',['../struct_scicos_import.html#a400292829c6d54c93b65eafdf41e3cd1',1,'ScicosImport']]],
-  ['maxcor',['maxcor',['../struct_l_s0001__struct.html#a48e761fc552df22b8b1bbf2cea1cdad0',1,'LS0001_struct']]],
-  ['maxord',['maxord',['../struct_l_s0001__struct.html#a9ab0f79a2dd4cd946025deb81ffde660',1,'LS0001_struct']]],
-  ['message',['message',['../classorg__modules__external__objects_1_1_scilab_abstract_environment_exception.html#a4c197dfb275cca1e088f1e6089159200',1,'org_modules_external_objects::ScilabAbstractEnvironmentException']]],
-  ['meth',['meth',['../struct_l_s0001__struct.html#a2de9fd790941841b1d989deb1a893cdf',1,'LS0001_struct']]],
-  ['methodofconv',['METHODOFCONV',['../classorg__modules__external__objects_1_1_scilab_options_setter.html#a7e023e93394b44360fc24e80faedab5e',1,'org_modules_external_objects::ScilabOptionsSetter']]],
-  ['miter',['miter',['../struct_l_s0001__struct.html#aa38698a5649772071f11bd3d4e018680',1,'LS0001_struct']]],
-  ['mmode',['mmode',['../struct_m_t_l_b_c__struct.html#a571c3c4dff7902f521560fab6ea76fe7',1,'MTLBC_struct']]],
-  ['mnel',['mnel',['../structscisparse.html#ad92f0843ccf9a777bfba746c6f5aeafd',1,'scisparse']]],
-  ['mod',['mod',['../struct_scicos_import.html#ac24873efb4203be15590237dc7c55410',1,'ScicosImport']]],
-  ['mode',['mode',['../structscicos__block.html#a2ea7afa3161507cbe321973e28d68d9e',1,'scicos_block']]],
-  ['modptr',['modptr',['../struct_scicos_import.html#a6915553756824f8ecffcc3d1013c3083',1,'ScicosImport']]],
-  ['msbp',['msbp',['../struct_l_s0001__struct.html#ad668bea02aecbd62e32804406d4ae118',1,'LS0001_struct']]],
-  ['mused',['mused',['../struct_l_s_a001__struct.html#a766e3456936718cb6812c4d969fbde90',1,'LSA001_struct']]],
-  ['mxhnil',['mxhnil',['../struct_l_s0001__struct.html#aa5205c2ab52e0977d9229859b3fd5f50',1,'LS0001_struct']]],
-  ['mxncf',['mxncf',['../struct_l_s0001__struct.html#a604f36d6ae06773006b32ed0f3b6d829',1,'LS0001_struct']]],
-  ['mxordn',['mxordn',['../struct_l_s_a001__struct.html#a1e30b9e5246e038338376d4cb7e46dc4',1,'LSA001_struct']]],
-  ['mxords',['mxords',['../struct_l_s_a001__struct.html#a107f3b7887ffd20c62345ae1416c427a',1,'LSA001_struct']]],
-  ['mxstep',['mxstep',['../struct_l_s0001__struct.html#a7b4d2216b2aec1799fac1b78476c9eec',1,'LS0001_struct']]]
+  ['matrix',['matrix',['../class_channel.html#a2d99c5e0ef0927a5c3bce0cd3b933b10',1,'Channel::matrix()'],['../class_gain.html#a7cbd1ededb85d68fab0f04ea34ed3eac',1,'Gain::matrix()']]]
 ];
